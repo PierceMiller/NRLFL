@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    height: 100%;
     padding: 0px;
     margin: 0px;
     background-color: #f6f6f6;
@@ -11,7 +12,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Candal', serif;
-    color: #444444;
+    color: #493181;
     margin: 5px;
 }
 
@@ -31,6 +32,19 @@ a {
 .btn:hover {
     color: #FFFFFF !important;
     background: #9fb1c9;
+}
+
+.text-input {
+    padding: .7rem 1rem;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    color: #e0e0e0;
+    line-height: 1.5rem;
+    font-size: 1.2em;
+    font-family: 'Lora', serif;
 }
 
 .clearfix::after {
@@ -140,6 +154,10 @@ header .menu-toggle {
     display: none;
 }
 
+.page-wrapper {
+    min-height: 100%;
+}
+
 .page-wrapper a:hover {
     color: #6e56a7;
 }
@@ -223,12 +241,6 @@ header .menu-toggle {
 
 }
 
-.content .sidebar {
-    height:300px;
-    width: 30%;
-    float: left;
-}
-
 .content .main-content .recent-post-title {
     margin: 20px;
 }
@@ -267,6 +279,72 @@ header .menu-toggle {
     padding: 10px;
     width: 60%;
     float: right;
+}
+
+.content .sidebar {
+    width: 30%;
+    float: left;
+    height:300px;
+}
+
+.content .sidebar .section {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.content .sidebar .section-title {
+    margin: 10px 0px 10px 0px;
+}
+
+.content .sidebar .section.search {
+    margin-top: 80px;
+}
+
+.content .sidebar .section.topics ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+.content .sidebar .section.topics ul li a {
+    display: block;
+    padding: 15px 0px 15px 0px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: all 0.3s;
+}
+
+.content .sidebar .section.topics ul li a:hover {
+    padding-left: 10px;
+    transition: all 0.3s
+}
+
+/*FOOTER*/
+
+.footer { 
+    background: #303036;
+    color: #d3d3d3;
+    height: 400px;
+    position: relative;
+}
+
+.footer .footer-content {
+    border: 1px solid red;
+    height: 350px;
+}
+
+.footer .footer-bottom {
+    background: #414147;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
 }
 
 @media only screen and (max-width: 900px) {
