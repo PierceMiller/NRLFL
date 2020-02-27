@@ -141,7 +141,7 @@ header ul li ul li a {
 
 header ul li ul li a.logout {
     color: red;
-} 
+}
 
 header ul li ul li a:hover {
     background: #8157e4;
@@ -343,7 +343,7 @@ header .menu-toggle {
 /*FOOTER*/
 
 .footer { 
-    background: #343434;;
+    background: #343434;
     color: #d3d3d3;
     height: 400px;
     position: relative;
@@ -352,6 +352,62 @@ header .menu-toggle {
 .footer .footer-content {
     height: 350px;
     border-top: 10px solid #6746b4;
+    display: flex;
+}
+
+.footer .footer-content h1{
+    font-family: 'Shanghai', arial;
+}
+
+.footer .footer-content h1, .footer .footer-content h2 {
+    color: white;
+} 
+
+.footer .footer-content .footer-section {
+    flex: 1;
+    padding: 25px;
+    border: 1px solid red;
+}
+
+.footer .footer-content .about .contact span{
+    display: block;
+    font-size: 1.3em;
+    margin-bottom: 8px;
+}
+
+.footer .footer-content .about .socials a {
+    width: 45px;
+    height: 45px;
+    padding-top: 5px;
+    margin-right: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.4em;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.footer .footer-content .about .socials a:hover {
+    background: white;
+    transition: all .3s;
+}
+
+
+
+.footer .footer-content .about .socials .fab {
+    font-size: 1.3em;
+}
+
+.footer .footer-content .about .socials .fa-facebook {
+    color: #3b5998;
+}
+
+.footer .footer-content .about .socials .fa-twitter {
+    color: #00acee
+}
+
+.footer .footer-content .about .socials .fa-youtube {
+    color: #ff0000;
 }
 
 .footer .footer-bottom {
@@ -366,7 +422,37 @@ header .menu-toggle {
     padding-top: 20px;
 }
 
-@media only screen and (max-width: 900px) {
+.footer .footer-content .footer-section .column {
+    padding: 30px;
+}
+  
+  .footer .footer-content .footer-section .column img {
+    margin-top: 10px;
+    width: 30px;
+  }
+
+  .footer .footer-content .footer-section .column th {
+      padding: 15px;
+      font-size: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .footer .footer-content .footer-section .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+@media only screen and (max-width: 1000px) {
+    .footer { 
+        height: 700px;
+    }
+
+    .footer .footer-content {
+        height: 700px;
+        display: flex;
+    }
+
     header {
         position: relative;
     }
