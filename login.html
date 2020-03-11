@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="http://allfont.net/allfont.css?fonts=shanghai" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Candal|Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://everythingfonts.com/font/face/0I2QRA8Tx3q_Wr3LvlRUIweF" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!--Custom Styling-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/756d32276f.js" crossorigin="anonymous"></script>
+    
+    <title>Login</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1 class="logo-text"><span>NRL Fantasy Lounge</span></h1>
+        </div>
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#">
+                    Charities
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul class="charities">
+                    <li><a href="https://starlight.org.au/">Starlight</a></li>
+                    <li><a href="https://rmhc.org.nz/">Ronald McDonald House</a></li>
+                    <li><a href="https://www.variety.org.nz/">Variety</a></li>
+                </ul>
+            </li>
+           <!--<li><a href="#">Sign Up</a></li>
+            <li><a href="#">Login</a></li>-->
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    Account
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#" class="logout">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <div class="auth-content">
+
+        <form action="login.html" method="post">
+            <h2 class="form-title">Login</h2>
+
+            <div>
+                <label>Username</label>
+                <input type="text" name="username" class="text-input">
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" name="password" class="text-input">
+            </div>
+            <div>
+                <button type="submit" name="login-btn" class="btn btn-big">Login</button>
+            </div>
+            <p>Or <a href="register.html">Sign Up</a></p>
+        </form>
+
+    </div>
+
+    <!--JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+    <!--Custom Script-->
+    <script src="js/scripts.js"></script>
+
+
+</body>
+</html>
