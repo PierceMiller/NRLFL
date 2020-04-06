@@ -1,5 +1,10 @@
 * {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
@@ -15,10 +20,9 @@ body {
    }
    
 h1, h2, h3, h4, h5, h6 {
-    color: #493181;
+    color: #343434;
     margin: 5px;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
+    font-family: 'Candal', serif;
 }
 
 ul {
@@ -104,16 +108,25 @@ a {
     background: #f5bcbc;
 }
 
+.logo-text {
+    font-family: 'Shanghai', arial;
+    position: relative;
+}
+
 /*Navbar*/
 
 header {
     height: 66px;
     background-color:#343434;
     border-bottom: 10px solid #6746b4;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 header * {
-    color: 	#70706D
+    color: 	#70706D;
 }
 
 header .logo {
@@ -126,9 +139,6 @@ header .logo-text {
     margin: 12px;
     font-family: 'Shanghai', arial;
     position: relative;
-}
-
-header .logo-text span {
     color: white;
 }
 
@@ -219,7 +229,7 @@ header .menu-toggle {
     position: relative;
 }
 .post-slider .post-wrapper {
-    width: 84%;
+    width: 70%;
     height: 350px;
     margin: 0px auto;
     padding: 10px 0px 10px 0px;
@@ -250,13 +260,14 @@ header .menu-toggle {
 
 .post-slider .slider-title {
     text-align: center;
+    padding-top: 80px;
     margin: 30px auto;
-    color: #493181;
+    color: #343434;
 }
 .post-slider .next {
     position: absolute;
     top: 50%;
-    right: 30px;
+    right: 70px;
     font-size: 2em;
     color: #444444;
     cursor: pointer;
@@ -265,7 +276,7 @@ header .menu-toggle {
 .post-slider .prev {
     position: absolute;
     top: 50%;
-    left: 30px;
+    left: 70px;
     font-size: 2em;
     color: #444444;
     cursor: pointer;
@@ -572,7 +583,7 @@ header .menu-toggle {
     }
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1400px) {
     .footer {
         height: auto;
     }
@@ -708,12 +719,13 @@ header .menu-toggle {
         width: 100%;
         text-align: center;
     }
-    .post-slider .next {
-        right: 10px;
 
+    .post-slider .next {
+        right: 20px;
     }
+    
     .post-slider .prev {
-        left: 10px;
+        left: 20px;
     }
 }
 }
